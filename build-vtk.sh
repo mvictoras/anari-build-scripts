@@ -21,7 +21,7 @@ if [ ! -d "${APPS_ROOT}/vtk/build" ]; then
 	mkdir ${APPS_ROOT}/vtk/build
 fi
 
-CMAKE_PREFIX_PATH="${APPS_ROOT}/anari/install/lib/cmake/anari-0.12.0" cmake \
+CMAKE_PREFIX_PATH="${APPS_ROOT}/anari/install/lib64/cmake/anari-0.12.0" cmake \
  -DCMAKE_INSTALL_PREFIX=${APPS_ROOT}/vtk/install \
  -DCMAKE_BUILD_TYPE=Release \
  -DVTK_MODULE_ENABLE_VTK_RenderingAnari=YES \
